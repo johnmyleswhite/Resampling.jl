@@ -19,6 +19,8 @@ resampling data:
 
 Using `splitrandom`:
 
+    using DataFrames
+
     df = DataFrame()
     df["A"] = 1:100
 
@@ -26,12 +28,16 @@ Using `splitrandom`:
 
 Using `resample`:
 
+    using DataFrames
+
     df = DataFrame()
     df["A"] = 1:100
 
     new_df = resample(df, 100)
 
 Using `jackknife`:
+
+    using DataFrames
 
     df = DataFrame()
     df["A"] = 1:100
@@ -41,6 +47,8 @@ Using `jackknife`:
 
 Using `bootstrap`:
 
+    using DataFrames
+
     df = DataFrame()
     df["A"] = 1:100
 
@@ -48,6 +56,8 @@ Using `bootstrap`:
     se_hat = std(resampled_means)
 
 Using `crossvalidate`:
+
+    using DataFrames
 
     df = DataFrame()
     df["A"] = 1:100
@@ -64,6 +74,8 @@ Using `crossvalidate`:
     training_results, test_results = crossvalidate(df, train, test, n_reps, 0.75)
 
 Using `kfold_crossvalidate`:
+
+    using DataFrames
 
     df = DataFrame()
     df["A"] = 1:100
