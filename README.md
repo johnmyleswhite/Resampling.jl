@@ -19,7 +19,7 @@ resampling data:
 
 Using `splitrandom`:
 
-    using DataFrames
+    using DataFrames, Resampling
 
     df = DataFrame()
     df["A"] = 1:100
@@ -28,7 +28,7 @@ Using `splitrandom`:
 
 Using `resample`:
 
-    using DataFrames
+    using DataFrames, Resampling
 
     df = DataFrame()
     df["A"] = 1:100
@@ -37,7 +37,7 @@ Using `resample`:
 
 Using `jackknife`:
 
-    using DataFrames
+    using DataFrames, Resampling
 
     df = DataFrame()
     df["A"] = 1:100
@@ -47,7 +47,7 @@ Using `jackknife`:
 
 Using `bootstrap`:
 
-    using DataFrames
+    using DataFrames, Resampling
 
     df = DataFrame()
     df["A"] = 1:100
@@ -57,7 +57,7 @@ Using `bootstrap`:
 
 Using `crossvalidate`:
 
-    using DataFrames
+    using DataFrames, Resampling
 
     df = DataFrame()
     df["A"] = 1:100
@@ -75,7 +75,7 @@ Using `crossvalidate`:
 
 Using `kfold_crossvalidate`:
 
-    using DataFrames
+    using DataFrames, Resampling
 
     df = DataFrame()
     df["A"] = 1:100
