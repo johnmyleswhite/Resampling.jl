@@ -5,7 +5,7 @@ function bootstrap(df::AbstractDataFrame,
 	# TODO: Make this the return type of statistic()
 	res = Array(Float64, runs)
 
-	for i in 1:n
+	for i in 1:runs
 		resampled_df = resample(df, iround(nrow(df) * proportion))
 		res[i] = statistic(resampled_df)
 	end
