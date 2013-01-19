@@ -10,9 +10,9 @@ module Resampling
 	       resample,
 	       splitrandom
 
-	include(joinpath(julia_pkgdir(), "Resampling", "src", "splitrandom.jl"))
-	include(joinpath(julia_pkgdir(), "Resampling", "src", "resample.jl"))
-	include(joinpath(julia_pkgdir(), "Resampling", "src", "jackknife.jl"))
-	include(joinpath(julia_pkgdir(), "Resampling", "src", "bootstrap.jl"))
-	include(joinpath(julia_pkgdir(), "Resampling", "src", "crossvalidate.jl"))
+	include("splitrandom.jl")
+	include("resample.jl")
+	include("jackknife.jl")
+	include("bootstrap.jl")
+	include("crossvalidate.jl")
 end
