@@ -2,7 +2,6 @@
 # Correctness Tests
 #
 
-include("src/Resampling.jl")
 using Resampling
 
 my_tests = ["test/splitrandom.jl",
