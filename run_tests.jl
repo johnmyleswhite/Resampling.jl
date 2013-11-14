@@ -2,7 +2,6 @@
 # Correctness Tests
 #
 
-require("Resampling")
 using Resampling
 
 my_tests = ["test/splitrandom.jl",

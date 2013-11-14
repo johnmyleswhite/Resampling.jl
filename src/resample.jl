@@ -3,7 +3,7 @@ function resample(df::AbstractDataFrame, s::Integer)
 
 	included = Array(Int, s)
 	for i in 1:s
-		included[i] = randi(n)
+		included[i] = rand(1:n)
 	end
 
 	return df[included, :]
