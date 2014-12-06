@@ -1,6 +1,12 @@
 Resampling.jl
 =============
 
+# NOTICE
+
+**This package is unmaintained. Its reliability is not guaranteed.**
+
+# Introduction
+
 Tools for resampling data to assess model fits
 
 # API
